@@ -1,1 +1,2 @@
 # VDU_LK_v1
+This code repository hosts the initial version of the model. Given the rigor and dynamic nature of academic research, subsequent improvements and updates to this code repository will be carried out in accordance with the schedule of paper revision and publication. During this process, efforts will be made to ensure that the code repository remains highly consistent and coordinated with the research findings presented in the paper at all stages, so as to meet the actual requirements of academic norms and research progress. 
