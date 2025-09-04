@@ -191,3 +191,9 @@ if __name__ == "__main__":
 
     plt.tight_layout()
     plt.show()
+
+# Only one example is provided here. In practical applications, the pixels guided by the VD - UNet
+# mask do not participate in the clustering. For automatic segmentation, the clustering centers of
+# the target objects obtained from the training images are used. According to the Euclidean distance,
+# finding the closest one can achieve the automatic segmentation of the corresponding target.
+
