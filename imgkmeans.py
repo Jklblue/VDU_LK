@@ -140,11 +140,11 @@ def show_single_class_image(original_image, mask, target_class):
 
     valid_classes = np.unique(mask)
     if target_class not in valid_classes:
-        raise ValueError(f"目标类别{target_class}不存在，合法类别为{valid_classes}")
+        raise ValueError(f"Target category{target_class}doesn't exist. The legal categories are{valid_classes}")
 
-    # 生成掩码：目标类别为True，其他为False
+
     target_mask = (mask == target_class)
-    # 复制原始图像，非目标类别设为黑色（RGB=(0,0,0)）
+
     single_class_image = original_image.copy()
     single_class_image[~target_mask] = (0, 0, 0)
 
@@ -154,7 +154,7 @@ def show_single_class_image(original_image, mask, target_class):
 if __name__ == "__main__":
 
     image_path = "img/DJI_0200_1.jpg"  # Replace with your image path
-    k = 3 
+    k = 3
     color_space = 'LAB'
 
 
@@ -191,5 +191,3 @@ if __name__ == "__main__":
 
     plt.tight_layout()
     plt.show()
-
-
